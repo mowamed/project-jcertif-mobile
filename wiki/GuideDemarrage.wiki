@@ -1,0 +1,51 @@
+#summary Procédure d'exécution de l'application
+#labels Phase-Deploy,Guide,Android
+
+= Introduction =
+
+Cette page a pour objectif de présenter le mode opératoire pour exécuter l'application Android.
+
+= 1. Installer Android SDK =
+  * Télécharger le kit de développement Android *[http://dl.google.com/android/android-sdk_r12-windows.zip ici]*.
+  * Décompresser le contenu du ZIP dans le répertoire de votre choix.
+  * Créer une variable d'environnement ANDROID_HOME qui référence ce répertoire
+
+TODO...
+
+
+= 2. Récupérer les sources =
+L'outil de gestion des sources pour le projet est [http://fr.wikipedia.org/wiki/Apache_Subversion SVN]. Les sources peuvent donc être récupérées par tout [http://fr.wikipedia.org/wiki/Comparaison_des_clients_pour_Subversion  client SVN]. 
+
+Pour le projet, nous recommandons l'utilisation de *[http://tortoisesvn.tigris.org/ TortoiseSVN ]*.
+
+  === 2.1. Installer TortoiseSVN ===
+   * Télécharger l'outil *[http://tortoisesvn.net/downloads.html ici]*.
+   * Lancer l'exécutable et suivez les instructions
+
+  === 2.2. Récupérer les sources ===
+   * Créer le répertoire de votre choix sur votre disque
+   * Faire un clic droit sur ce répertoire et choisir l'option "checkout"
+   * Saisir l'adresse https://project-jcertif-mobile.googlecode.com/svn/ puis cliquer sur OK
+   * Toutes les ressources du projet sont téléchargées.
+
+
+= 3. Installer L'environnement de travail =
+
+Il est bien sûr possible d'utiliser n'importe quel IDE intégrant Android (Netbeans, Eclipse, InteliJ IDEA, etc...). Nous décrirons la procédure sous Eclipse pour sa popularité.
+
+  == 3.1. Installer Eclipse ==
+  * Télécharger Eclipse [http://www.eclipse.org/downloads/packages/eclipse-classic-37/indigor ici].
+  * Décompresser le contenu du ZIP téléchargé dans le répertoire de votre choix
+  
+
+  == 3.2 Installer le plugin ADT ==
+TODO...
+
+  == 3.3 Installer le plugin Maven et Android Maven == 
+TODO...
+
+  == 3.4 Créer un émulateur ==
+TODO...
+
+  == 3.5 Lancer l'application ==
+TODO...
