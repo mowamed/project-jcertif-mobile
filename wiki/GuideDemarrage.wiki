@@ -34,18 +34,37 @@ Pour le projet, nous recommandons l'utilisation de *[http://tortoisesvn.tigris.o
 Il est bien sûr possible d'utiliser n'importe quel IDE intégrant Android (Netbeans, Eclipse, InteliJ IDEA, etc...). Nous décrirons la procédure sous Eclipse pour sa popularité.
 
   == 3.1. Installer Eclipse ==
-  * Télécharger Eclipse [http://www.eclipse.org/downloads/packages/eclipse-classic-37/indigor ici].
+  * Télécharger Eclipse [http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/indigor ici].
   * Décompresser le contenu du ZIP téléchargé dans le répertoire de votre choix
+  * Lancer Eclipse à partir du fichier eclipse.exe
   
 
-  == 3.2 Installer le plugin ADT ==
-TODO...
+  == 3.2 Installer le plugin ADT pour Eclipse ==
+Pour installer le plugin ADT pour Eclipse :
+  * Lancer Eclipse
+  * Aller dans le menu Help > Install New Software...
+  * Cliquer sur Add...
+  * Mettre le nom du repository souhaité et dans la partie location saisir https://dl-ssl.google.com/android/eclipse/ puis cliquer sur OK
+  * Cocher toutes les options et faire Next
+  * Terminer l'installation en cliquant sur Next et en acceptant les conditions d'utilisation
+  * Redémarrer Eclipse.
+
+Plus d'informations sur ce plugin *[http://developer.android.com/sdk/eclipse-adt.html ici]*.
 
   == 3.3 Installer le plugin Maven et Android Maven == 
-TODO...
+Si vous avez pris la distribution pour développeur Java comme indiqué par le lien ci-dessus, vous avez déjà le plugin Maven installé.
 
-  == 3.4 Créer un émulateur ==
-TODO...
+Si ce n'est pas le cas, utiliser la même procédure que 3.2 avec l'URL http://download.eclipse.org/technology/m2e/releases puis redémarrer Eclipse.
+
+Installer le plugin Maven Android en suivant la procédure 3.2 avec l'URL https://svn.codespot.com/a/eclipselabs.org/m2eclipse-android-integration/updates/m2eclipse-android-integration/
+
+
+  == 3.4 Importer le projet dans Eclipse ==
+  * Aller au menu File > Import...
+  * Dans la partie Maven, sélectionner Existing Maven projects...
+  * Sélectionner les répertoires, jcertif-mobile, jcertif-mobile-app, jcertif-mobile-test
+  * Lancer l'import
+
 
   == 3.5 Lancer l'application ==
 TODO...
