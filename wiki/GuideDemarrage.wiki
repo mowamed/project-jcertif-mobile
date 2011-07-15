@@ -8,6 +8,10 @@ Cette page a pour objectif de présenter le mode opératoire pour exécuter l'ap
 = 1. Installer Android SDK =
   * Télécharger le kit de développement Android *[http://dl.google.com/android/android-sdk_r12-windows.zip ici]*.
   * Décompresser le contenu du ZIP dans le répertoire de votre choix.
+http://project-jcertif-mobile.code.google.com/svn/wiki/img/guide_demarrage/zip_sdk_contenu.png
+  * Lancer le SDK Manager
+  * Choisir 
+
   * Créer une variable d'environnement ANDROID_HOME qui référence ce répertoire
 
 TODO...
