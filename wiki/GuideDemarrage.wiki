@@ -8,9 +8,29 @@ Cette page a pour objectif de présenter le mode opératoire pour exécuter l'ap
 = 1. Installer Android SDK =
   * Télécharger le kit de développement Android *[http://dl.google.com/android/android-sdk_r12-windows.zip ici]*.
   * Décompresser le contenu du ZIP dans le répertoire de votre choix.
-http://project-jcertif-mobile.code.google.com/svn/wiki/img/guide_demarrage/zip_sdk_contenu.png
   * Lancer le SDK Manager
-  * Choisir 
+http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/zip_sdk_contenu.png
+  * Cliquer sur Annuler car le téléchargement sélectif semble ne pas fonctionner
+  * Aller ensuite dans la partie "Available packages", sélectionner la version 2.3.3 puis cliquer sur installer
+
+http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/sdk_android_install_package.png
+
+Il se peut que vous ayez un message d'erreur à cette étape, fermer la fenêtre.
+
+  * Accepter les conditions puis cliquer sur install
+http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/sdk_android_install_package_1.png
+
+  * Accepter de redémarrer
+http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/sdk_android_install_package_2.png
+
+  * Si le redémarrage n'est pas effectif, fermer toutes les fenêtres Android SDK et relancer le SDK Manager. Attention, au redémarrage l'utilitaire va proposer d'installer les autres versions d'Android. N'acceptez que si vous êtes patient... :-)
+
+  * Dans la partie "Virtual Device" cliquer sue new
+http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/virtual_device_1.png
+
+  * hhhh
+
+http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/virtual_device_2.png
 
   * Créer une variable d'environnement ANDROID_HOME qui référence ce répertoire
 
@@ -29,7 +49,11 @@ Pour le projet, nous recommandons l'utilisation de *[http://tortoisesvn.tigris.o
   === 2.2. Récupérer les sources ===
    * Créer le répertoire de votre choix sur votre disque
    * Faire un clic droit sur ce répertoire et choisir l'option "checkout"
+
+http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/checkout_project_menu.png
    * Saisir l'adresse https://project-jcertif-mobile.googlecode.com/svn/ puis cliquer sur OK
+
+http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/enter_url_repo.png
    * Toutes les ressources du projet sont téléchargées.
 
 
