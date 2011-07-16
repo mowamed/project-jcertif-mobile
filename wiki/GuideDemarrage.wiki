@@ -25,7 +25,7 @@ http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/sdk_an
 
   * Si le redémarrage n'est pas effectif, fermer toutes les fenêtres Android SDK et relancer le SDK Manager. Attention, au redémarrage l'utilitaire va proposer d'installer les autres versions d'Android. N'acceptez que si vous êtes patient... :-)
 
-  * Dans la partie "Virtual Device" cliquer sue new
+  * Dans la partie "Virtual Device" cliquer sur "New"
 http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/virtual_device_1.png
 
   * Remplissez les informations comme ci-dessous puis cliquer sur "Create AVD"
