@@ -107,7 +107,7 @@ Installer le plugin Maven Android en suivant la procédure 3.2 avec l'URL https:
 
 http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_android_sdk.png
 
-  == 3.4 Importer le projet dans Eclipse ==
+  == 3.5 Importer le projet dans Eclipse ==
   * Aller au menu File > Import...
 http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_file_import.png
   * Dans la partie Maven, sélectionner Existing Maven projects...
@@ -127,5 +127,5 @@ http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclips
 Cette compilation pourrait aller en erreur mais ça n'empêchera pas d'exécuter l'application.
 
 
-  == 3.5 Lancer l'application ==
+  == 3.6 Lancer l'application ==
 Faire clic droit sur le projet jcertif-mobile-app Run As > Android Application
