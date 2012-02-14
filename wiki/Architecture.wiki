@@ -1,0 +1,14 @@
+= Introduction =
+
+L’application devra être conçue sur deux principes :
+* C’est à destination de la plateforme Android, donc devra répondre aux contraintes de l’embarqué (cache et sécu).
+* Générique.  L’objectif étant de faire de JCertif App, l’application pour l’organisation de conf, qui tout le monde pourra télécharger, alors le client mobile devra être suffisamment générique et paramétrable pour être utilisée par d’autres instances de JCertif App.
+
+= Architecture globale =
+
+http://code.google.com/p/project-jcertif-mobile/downloads/detail?name=Achitecture globale.png
+
+
+= Architecture détaillée =
+
+http://code.google.com/p/project-jcertif-mobile/downloads/detail?name=Architecture_détaillée.png
