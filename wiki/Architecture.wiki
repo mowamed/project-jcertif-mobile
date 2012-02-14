@@ -6,7 +6,7 @@ L’application devra être conçue sur deux principes :
 
 = Architecture globale =
 
-http://project-jcertif-mobile.googlecode.com/svn/wiki/img/Architecture/Achitecture_globale.png
+http://project-jcertif-mobile.googlecode.com/svn/wiki/img/architecture/Achitecture_globale.png
 
 
 
