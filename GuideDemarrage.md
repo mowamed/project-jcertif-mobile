@@ -1,0 +1,128 @@
+# Introduction #
+
+Cette page a pour objectif de présenter le mode opératoire pour exécuter l'application Android.
+
+# 1. Installer Android SDK #
+  * Télécharger le kit de développement Android **[ici](http://dl.google.com/android/android-sdk_r12-windows.zip)**.
+  * Décompresser le contenu du ZIP dans le répertoire de votre choix.
+  * Lancer le SDK Manager
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/zip_sdk_contenu.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/zip_sdk_contenu.png)
+  * Cliquer sur Annuler car le téléchargement sélectif semble ne pas fonctionner
+  * Aller ensuite dans la partie "Available packages", sélectionner la version 2.3.3 puis cliquer sur installer
+
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/sdk_android_install_package.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/sdk_android_install_package.png)
+
+Il se peut que vous ayez un message d'erreur à cette étape, fermer la fenêtre.
+
+  * Accepter les conditions puis cliquer sur install
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/sdk_android_install_package_1.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/sdk_android_install_package_1.png)
+
+  * Accepter de redémarrer ADB
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/sdk_android_install_package_2.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/sdk_android_install_package_2.png)
+
+  * Si le redémarrage n'est pas effectif, fermer toutes les fenêtres Android SDK et relancer le SDK Manager. Attention, au redémarrage l'utilitaire va proposer d'installer les autres versions d'Android. N'acceptez que si vous êtes patient... :-)
+
+  * Dans la partie "Virtual Device" cliquer sur "New"
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/virtual_device_1.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/virtual_device_1.png)
+
+  * Remplissez les informations comme ci-dessous puis cliquer sur "Create AVD"
+
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/virtual_device_2.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/virtual_device_2.png)
+
+  * Créer une variable d'environnement ANDROID\_HOME qui référence le répertoire où se trouve le fichier "SDK Manager.exe".
+
+
+
+
+# 2. Récupérer les sources #
+L'outil de gestion des sources pour le projet est [SVN](http://fr.wikipedia.org/wiki/Apache_Subversion). Les sources peuvent donc être récupérées par tout [client SVN](http://fr.wikipedia.org/wiki/Comparaison_des_clients_pour_Subversion).
+
+Pour le projet, nous recommandons l'utilisation de **[TortoiseSVN ](http://tortoisesvn.tigris.org/)**.
+
+> ### 2.1. Installer TortoiseSVN ###
+    * Télécharger l'outil **[ici](http://tortoisesvn.net/downloads.html)**.
+    * Lancer l'exécutable et suivez les instructions
+
+> ### 2.2. Récupérer les sources ###
+    * Créer le répertoire de votre choix sur votre disque
+    * Faire un clic droit sur ce répertoire et choisir l'option "checkout"
+
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/checkout_project_menu.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/checkout_project_menu.png)
+  * Saisir l'adresse https://project-jcertif-mobile.googlecode.com/svn/ puis cliquer sur OK
+
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/enter_url_repo.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/enter_url_repo.png)
+  * Toutes les ressources du projet sont téléchargées.
+
+
+# 3. Installer L'environnement de travail #
+
+Il est bien sûr possible d'utiliser n'importe quel IDE intégrant Android (Netbeans, Eclipse, InteliJ IDEA, etc...). Nous décrirons la procédure sous Eclipse pour sa popularité.
+
+> ## 3.1. Installer Eclipse ##
+  * Télécharger Eclipse [ici](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/heliossr2). Ne choisissez pas la version pour développeur Java qui intègre un plugin pour Maven.
+
+  * Décompresser le contenu du ZIP téléchargé dans le répertoire de votre choix
+
+  * Trouver le fichier eclipse.exe
+  * Créer un raccourci de ce fichier eclipse-JDK.exe (vous pouvez l'appeler comme vous le souhaiter)
+  * Après un clic droit sur le raccourci, choisissez "propriétés"
+  * Dans la partie cible compléter avec -vm "[CHEMIN\_VERS\_JDK](CHEMIN_VERS_JDK.md)/bin/javaw.exe". Exemple : C:\Users\rossi\Documents\01-Java\tools\ide\eclipse\3.6.2-CLASSIC\eclipse\eclipse.exe -clean -vm "C:\Program Files\Java\jdk1.6.0\_24\bin\javaw.exe"
+Cela permet d'être sûr qu'Eclipse est lancé sur un JDK et non un JRE.
+
+  * Lancer Eclipse à partir du raccourci
+  * Choisir l'espace de travail de son choix
+
+
+> ## 3.2 Installer le plugin ADT pour Eclipse ##
+Pour installer le plugin ADT pour Eclipse :
+  * Lancer Eclipse
+  * Aller dans le menu Help > Install New Software...
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_help_new_soft.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_help_new_soft.png)
+
+  * Cliquer sur Add...
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_soft_add.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_soft_add.png)
+
+  * Mettre le nom du repository souhaité et dans la partie location saisir https://dl-ssl.google.com/android/eclipse/ puis cliquer sur OK
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_add_url_repo.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_add_url_repo.png)
+
+  * Cocher toutes les options et faire Next
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_soft_select_all.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_soft_select_all.png)
+
+  * Terminer l'installation en cliquant sur Next et en acceptant les conditions d'utilisation
+  * Redémarrer Eclipse.
+
+Plus d'informations sur ce plugin **[ici](http://developer.android.com/sdk/eclipse-adt.html)**.
+
+> ## 3.3 Installer le plugin Maven et Android Maven ##
+
+Si ce n'est pas le cas, utiliser la même procédure que 3.2 avec l'URL http://m2eclipse.sonatype.org/sites/m2e puis redémarrer Eclipse.
+
+Installer le plugin Maven Android en suivant la procédure 3.2 avec l'URL https://svn.codespot.com/a/eclipselabs.org/m2eclipse-android-integration/updates/m2eclipse-android-integration/
+
+> ## 3.4 Configurer le SDK Android dans Eclipse ##
+  * Aller dans le menu Window > Preferences > Android
+
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_android_sdk.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_android_sdk.png)
+
+> ## 3.5 Importer le projet dans Eclipse ##
+  * Aller au menu File > Import...
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_file_import.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_file_import.png)
+  * Dans la partie Maven, sélectionner Existing Maven projects...
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_import_1.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_import_1.png)
+  * Sélectionner le répertoire racine des sources
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_import_2.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_import_2.png)
+
+  * Sélectionner les répertoires suivants
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_import_3.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_import_3.png)
+
+  * Vérifier que vous avez bien le fichier R.java généré. Si ce n'est pas le cas, supprimer le répertoire gen, il sera regénéré aussitôt!
+
+![http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_R_file.png](http://project-jcertif-mobile.googlecode.com/svn/wiki/img/guide_demarrage/eclipse_R_file.png)
+
+  * Lancer une compilation depuis jcertif-mobile. Clic droit sur jcertif-mobile Run As > Maven install
+
+Cette compilation pourrait aller en erreur mais ça n'empêchera pas d'exécuter l'application.
+
+
+> ## 3.6 Lancer l'application ##
+Faire clic droit sur le projet jcertif-mobile-app Run As > Android Application
